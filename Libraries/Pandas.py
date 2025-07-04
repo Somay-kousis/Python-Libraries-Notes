@@ -73,7 +73,7 @@ df.agg(lambda x: np.mean(x) * 5.6) # is applied column wise and changes shape of
 df.transform(lambda x: x * 101.2) #applies on each element
 
 s = pd.Series(np.random.randint(0, 7, size=10))
-s.value_counts() #tells numbers of accurances
+s.value_counts() #tells numbers of occurances
 
 s = pd.Series(["A", "B", "C", "Aaba", "Baca", np.nan, "CABA", "dog", "cat"])
 s.str.lower() #using str you can command all strings in a data set
@@ -153,7 +153,7 @@ stacked.unstack(1) #unstack one two as 0 index level
 stacked.unstack(2)=stacked.unstack() #unstack A and B as 0 index level
 
 
-#AFter stack we have pivot
+#After stack we have pivot
 df = pd.DataFrame(
     {
         "A": ["one", "one", "two", "three"] * 3,
